@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="s.css">
+</head>
+<body>
+      
+        <form   method="get" action="/new">
+
+   <button> add</button>
+
+        </form>
+
+
+ <% for( chat of chats){  %>
+
+        <div>
+            <h3>from: <%= chat.from  %></h3>
+              <h3> to: <%= chat.to  %></h3>
+                <h3> msg: <%= chat.msg  %></h3>
+                  <h3> Date: <%= chat.date  %></h3>
+                   <hr>
+        </div>
+
+
+
+
+
+
+<% } %>
+
+
+
+
+
+</body>
+</html>
